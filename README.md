@@ -35,9 +35,9 @@ Obtain the url to your git repository.
 ```vi {{ project_name }}/local_settings.py```
 
 ### Sync database ###
-```./manage.py syncdb```
+```python manage.py syncdb```
 
 ## Running ##
-```./manage.py runserver```
+```python manage.py runserver```
 
 Open browser to 127.0.0.1:8000
