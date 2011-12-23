@@ -14,21 +14,25 @@ If you're not using virtualenv or virtualenvwrapper you may skip this step.
 ```mkvirtualenv --no-site-packages {{ project_name }}-env```
 
 #### For virtualenv ####
-```virtualenv --no-site-packages {{ project_name }}-env
-cd {{ project_name }}-env
-source bin/activate```
+```virtualenv --no-site-packages {{ project_name }}-env```
+
+```cd {{ project_name }}-env```
+
+```source bin/activate```
 
 ### Clone the code ###
 Obtain the url to your git repository.
 ```git clone <URL_TO_GIT_RESPOSITORY> {{ project_name }}```
 
 ### Install requirements ###
-```cd {{ project_name }}
-pip install -r requirements.txt```
+```cd {{ project_name }}```
+
+```pip install -r requirements.txt```
 
 ### Configure project ###
-```cp {{ project_name }}/__local_settings.py {{ project_name }}/local_settings.py
-vi {{ project_name }}/local_settings.py```
+```cp {{ project_name }}/__local_settings.py {{ project_name }}/local_settings.py```
+
+```vi {{ project_name }}/local_settings.py```
 
 ### Sync database ###
 ```./manage.py syncdb```
