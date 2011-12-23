@@ -1,0 +1,5 @@
+*.pyc
+*.pyo
+.DS_Store
+/local_settings.py
+/public
