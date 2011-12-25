@@ -1,6 +1,6 @@
 *.pyc
 *.pyo
 .DS_Store
-/{{ project_name }}/local_settings.py
-/{{ project_name }}/public/static
-/{{ project_name }}/public/media
+local_settings.py
+public/static
+public/media
