@@ -1,4 +1,7 @@
 # Local settings for {{ project_name }} project.
+LOCAL_SETTINGS = True
+from settings import *
+
 DEBUG = True
 
 DATABASES = {
