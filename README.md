@@ -11,33 +11,43 @@ Create a virtual python enviroment for the project.
 If you're not using virtualenv or virtualenvwrapper you may skip this step.
 
 #### For virtualenvwrapper ####
-```mkvirtualenv --no-site-packages {{ project_name }}-env```
+```bash
+mkvirtualenv --no-site-packages {{ project_name }}-env
+```
 
 #### For virtualenv ####
-```virtualenv --no-site-packages {{ project_name }}-env```
-
-```cd {{ project_name }}-env```
-
-```source bin/activate```
+```bash
+virtualenv --no-site-packages {{ project_name }}-env
+cd {{ project_name }}-env
+source bin/activate
+```
 
 ### Clone the code ###
 Obtain the url to your git repository.
-```git clone <URL_TO_GIT_RESPOSITORY> {{ project_name }}```
+```bash
+git clone <URL_TO_GIT_RESPOSITORY> {{ project_name }}
+```
 
 ### Install requirements ###
-```cd {{ project_name }}```
-
-```pip install -r requirements.txt```
+```bash
+cd {{ project_name }}
+pip install -r requirements.txt
+```
 
 ### Configure project ###
-```cp {{ project_name }}/__local_settings.py {{ project_name }}/local_settings.py```
-
-```vi {{ project_name }}/local_settings.py```
+```bash
+cp {{ project_name }}/__local_settings.py {{ project_name }}/local_settings.py
+vi {{ project_name }}/local_settings.py
+```
 
 ### Sync database ###
-```python manage.py syncdb```
+```bash
+python manage.py syncdb
+```
 
 ## Running ##
-```python manage.py runserver```
+```bash
+python manage.py runserver
+```
 
-Open browser to 127.0.0.1:8000
+Open browser to http://127.0.0.1:8000
