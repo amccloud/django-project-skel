@@ -24,6 +24,7 @@ source bin/activate
 
 ### Clone the code ###
 Obtain the url to your git repository.
+
 ```bash
 git clone <URL_TO_GIT_RESPOSITORY> {{ project_name }}
 ```
