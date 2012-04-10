@@ -6,6 +6,7 @@ public/static
 public/media
 
 # some common IDEs ignored
+*.swp
 .idea/
 .buildpath
 .project
