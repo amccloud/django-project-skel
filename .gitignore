@@ -5,5 +5,9 @@ local_settings.py
 public/static
 public/media
 
-# IDE's ignored
+# some common IDEs ignored
 .idea/
+.buildpath
+.project
+.settings
+atlassian-ide-plugin.xml
