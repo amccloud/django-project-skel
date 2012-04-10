@@ -115,6 +115,11 @@ FIXTURE_DIRS = (
 )
 
 INSTALLED_APPS = (
+    'admin_tools',
+    'admin_tools.theming',
+    'admin_tools.menu',
+    'admin_tools.dashboard',
+
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -122,6 +127,13 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
+
+    # 'django.contrib.humanize',
+
+    'south',
+    # 'sorl.thumbnail',
+    # 'chunks',
+    # 'debug_toolbar',
 )
 
 # A sample logging configuration. The only tangible logging
