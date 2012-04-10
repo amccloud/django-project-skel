@@ -4,3 +4,6 @@
 local_settings.py
 public/static
 public/media
+
+# IDE's ignored
+.idea/
