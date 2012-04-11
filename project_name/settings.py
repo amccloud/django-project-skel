@@ -167,6 +167,9 @@ LOGGING = {
     }
 }
 
+# Soon will be deprecated
+ADMIN_MEDIA_PREFIX = '/static/admin/'
+
 try:
     from settings_local import *
 except ImportError:
