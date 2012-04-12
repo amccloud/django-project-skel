@@ -169,6 +169,7 @@ LOGGING = {
 
 # Soon will be deprecated
 ADMIN_MEDIA_PREFIX = '/static/admin/'
+ADMIN_TOOLS_THEMING_CSS = 'css/core-extended.css'
 
 try:
     from settings_local import *
