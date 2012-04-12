@@ -1,0 +1,97 @@
+/* Дерево */
+
+.tree-list {
+    margin: 10px 0 20px 0;
+}
+.tree-list ul {
+    list-style: none;
+    line-height: 28px;
+    padding: 0px; margin: 0;
+}
+.tree-list ul li {
+    list-style: none;
+    line-height: 28px;
+    font-size: 13px;
+}
+.tree-list ul li li {
+    padding-left: 30px;
+}
+.tree-list ul li .item {
+    border-left: 4px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding-left: 10px;
+}
+.tree-list ul li input {
+    margin-right: 4px;
+}
+
+/* Общие элементы */
+#header {
+    color: #222;
+    background: #eee !important;
+}
+#header a {
+    color: #666 !important;
+    text-decoration: underline;
+}
+#header #branding {
+    border-bottom: 1px solid #ddd;
+    height: 70px !important;
+}
+#header #branding h1 {
+    background: transparent url('../img/logo_admin.png') no-repeat 0 10px !important;
+    height: 29px !important;
+    padding: 53px 0 0 41px !important;
+    font-size: 11px;
+    text-indent: 0 !important;
+    width: 400px !important;
+    margin: 0 0 0 20px !important;
+    color: #999;
+}
+#user-tools {
+    margin: 15px 0 0 0;
+}
+
+
+.module h2, .module caption, .inline-group h2 {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 8px 0 8px 10px;
+}
+fieldset.collapsed h2 {
+    padding: 8px 0 8px 10px;
+}
+.form-row input[type=text], 
+.form-row input[type=password] {
+    padding: 4px;
+    width: 50%;
+}
+#id_title {
+    padding: 5px;
+    font-size: 16px;
+    width: 50%;
+}
+
+
+.selector-available .selector-filter,
+.selector-chosen .selector-filter {
+	display: none;
+}
+
+.form-row.flowers ul {
+	list-style: none !important;
+	margin: 0; padding: 0 0 0 120px ;
+}
+	.form-row.flowers ul li {
+		list-style: none !important;
+		margin: 0 0 4px 0; padding: 0;
+		width: 280px;
+		float: left;
+	}
+	.form-row.flowers ul:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+/* Д */
