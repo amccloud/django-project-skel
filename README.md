@@ -26,24 +26,24 @@ source bin/activate
 Obtain the url to your git repository.
 
 ```bash
-git clone <URL_TO_GIT_RESPOSITORY> {{ project_name }}
+git clone <URL_TO_THIS_GIT_RESPOSITORY>
 ```
 
 ### Install requirements ###
 ```bash
-cd {{ project_name }}
+cd django-project-skel
 pip install -r requirements.txt
 ```
 
 ### Configure project ###
 ```bash
-cp {{ project_name }}/__local_settings.py {{ project_name }}/local_settings.py
-vi {{ project_name }}/local_settings.py
+django-admin.py startproject --template=./django-project-skel {{ project_name }}
 ```
 
 ### Sync database ###
 ```bash
 python manage.py syncdb
+python manage.py migrate
 ```
 
 ## Running ##
