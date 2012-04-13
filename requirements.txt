@@ -5,6 +5,7 @@ django-admin-tools==0.4.1
 PIL==1.1.7
 django-mptt==0.5.2
 FeinCMS==1.5.3
+pytils
 
 # PIL==1.1.7
 # sorl-thumbnail==11.12
