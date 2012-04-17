@@ -6,6 +6,9 @@ PIL==1.1.7
 django-mptt==0.5.2
 FeinCMS==1.5.3
 
+django-keyedcache
+-e hg+https://bitbucket.org/bkroeze/django-livesettings/#egg=django-livesettings
+
 # PIL==1.1.7
 # sorl-thumbnail==11.12
 # django-chunks
