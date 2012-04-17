@@ -1,14 +1,19 @@
+# OS
+.DS_Store
+
+# Python
 *.pyc
 *.pyo
-.DS_Store
-local_settings.py
-public/static
-public/media
 
-# some common IDEs ignored
+# Common IDEs
 *.swp
 .idea/
 .buildpath
 .project
 .settings
 atlassian-ide-plugin.xml
+
+# Project
+/{{ project_name }}/local_settings.py
+/{{ project_name }}/public/static
+/{{ project_name }}/public/media
