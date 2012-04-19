@@ -136,6 +136,7 @@ INSTALLED_APPS = (
     'feincms',
     'feincms.module.page',
     'feincms.module.medialibrary',
+    'livesettings',
     # 'sorl.thumbnail',
     # 'chunks',
     # 'debug_toolbar',
