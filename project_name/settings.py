@@ -4,14 +4,16 @@ import os
 PROJECT_DIR = os.path.dirname(__file__)
 PUBLIC_DIR = os.path.join(PROJECT_DIR, 'public')
 
-DEBUG = False
-TEMPLATE_DEBUG = True
+DEBUG = True
+TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
 
 MANAGERS = ADMINS
+
+SECRET_KEY = '{{ secret_key }}'
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -20,11 +22,11 @@ MANAGERS = ADMINS
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Yekaterinburg'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru-RU'
 
 SITE_ID = 1
 
@@ -115,6 +117,11 @@ FIXTURE_DIRS = (
 )
 
 INSTALLED_APPS = (
+    'admin_tools',
+    'admin_tools.theming',
+    'admin_tools.menu',
+    'admin_tools.dashboard',
+
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -122,6 +129,17 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
+    'django.contrib.humanize',
+
+    'south',
+    'mptt',
+    'feincms',
+    'feincms.module.page',
+    'feincms.module.medialibrary',
+    'livesettings',
+    # 'sorl.thumbnail',
+    # 'chunks',
+    # 'debug_toolbar',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -153,10 +171,15 @@ LOGGING = {
     }
 }
 
+# Soon will be deprecated
+ADMIN_MEDIA_PREFIX = '/static/admin/'
+ADMIN_TOOLS_THEMING_CSS = 'css/core-extended.css'
+
+ADMIN_TOOLS_MENU = '{{project_name}}.menu.CustomMenu'
+ADMIN_TOOLS_INDEX_DASHBOARD = '{{project_name}}.dashboard.CustomIndexDashboard'
+ADMIN_TOOLS_APP_INDEX_DASHBOARD = '{{project_name}}.dashboard.CustomAppIndexDashboard'
+
 try:
-    LOCAL_SETTINGS
-except NameError:
-    try:
-        from local_settings import *
-    except ImportError:
-        pass
+    from settings_local import *
+except ImportError:
+    pass

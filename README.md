@@ -2,6 +2,7 @@
 ## Prerequisites ##
 
 - python >= 2.5
+- django >= 1.4
 - pip
 - virtualenv/wrapper (optional)
 
@@ -26,24 +27,21 @@ source bin/activate
 Obtain the url to your git repository.
 
 ```bash
-git clone <URL_TO_GIT_RESPOSITORY> {{ project_name }}
+django-admin.py startproject --template https://github.com/signception/django-project-skel/zipball/master --extension py,md,ini {{ project_name }}
 ```
 
 ### Install requirements ###
+Edit requirements.txt for your project
+
 ```bash
 cd {{ project_name }}
 pip install -r requirements.txt
 ```
 
-### Configure project ###
-```bash
-cp {{ project_name }}/__local_settings.py {{ project_name }}/local_settings.py
-vi {{ project_name }}/local_settings.py
-```
-
 ### Sync database ###
 ```bash
 python manage.py syncdb
+python manage.py migrate
 ```
 
 ## Running ##
