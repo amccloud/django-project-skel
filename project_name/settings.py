@@ -4,8 +4,8 @@ import os
 PROJECT_DIR = os.path.dirname(__file__)
 PUBLIC_DIR = os.path.join(PROJECT_DIR, 'public')
 
-DEBUG = False
-TEMPLATE_DEBUG = True
+DEBUG = True
+TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
@@ -26,7 +26,7 @@ TIME_ZONE = 'Asia/Yekaterinburg'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
-LANGUAGE_CODE = 'ru-Ru'
+LANGUAGE_CODE = 'ru-RU'
 
 SITE_ID = 1
 
@@ -129,10 +129,13 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
-
-    # 'django.contrib.humanize',
+    'django.contrib.humanize',
 
     'south',
+    'mptt',
+    'feincms',
+    'feincms.module.page',
+    'feincms.module.medialibrary',
     # 'sorl.thumbnail',
     # 'chunks',
     # 'debug_toolbar',
@@ -169,6 +172,7 @@ LOGGING = {
 
 # Soon will be deprecated
 ADMIN_MEDIA_PREFIX = '/static/admin/'
+ADMIN_TOOLS_THEMING_CSS = 'css/core-extended.css'
 
 try:
     from settings_local import *
