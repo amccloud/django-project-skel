@@ -175,6 +175,10 @@ LOGGING = {
 ADMIN_MEDIA_PREFIX = '/static/admin/'
 ADMIN_TOOLS_THEMING_CSS = 'css/core-extended.css'
 
+ADMIN_TOOLS_MENU = '{{project_name}}.menu.CustomMenu'
+ADMIN_TOOLS_INDEX_DASHBOARD = '{{project_name}}.dashboard.CustomIndexDashboard'
+ADMIN_TOOLS_APP_INDEX_DASHBOARD = '{{project_name}}.dashboard.CustomAppIndexDashboard'
+
 try:
     from settings_local import *
 except ImportError:
