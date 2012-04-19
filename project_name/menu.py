@@ -26,9 +26,9 @@ class CustomMenu(Menu):
                     'django.contrib.*',
                 ),
                 children=[
-#                    items.MenuItem(u'Страницы', reverse('admin:flatpages_flatpage_changelist')),
-#                    items.MenuItem(u'Новости', reverse('admin:articles_news_changelist')),
-#                    items.MenuItem(u'Файлы', reverse('fb_browse')),
+#                    items.MenuItem(u'pages', reverse('admin:flatpages_flatpage_changelist')),
+#                    items.MenuItem(u'news', reverse('admin:articles_news_changelist')),
+#                    items.MenuItem(u'files', reverse('fb_browse')),
                 ],
             ),
             items.AppList(
