@@ -1,0 +1,10 @@
+{% templatetag openblock %} extends "admin/base.html" {% templatetag closeblock %}
+{% templatetag openblock %} load i18n {% templatetag closeblock %}
+
+{% templatetag openblock %} block title {% templatetag closeblock %}{{ title|escape }} | {{ project_name }} site admin{% templatetag openblock %} endblock {% templatetag closeblock %}
+
+{% templatetag openblock %} block branding {% templatetag closeblock %}
+<h1 id="site-name">{{ project_name }} administration</h1>
+{% templatetag openblock %} endblock {% templatetag closeblock %}
+
+{% templatetag openblock %} block nav-global {% templatetag closeblock %}{% templatetag openblock %} endblock {% templatetag closeblock %}
