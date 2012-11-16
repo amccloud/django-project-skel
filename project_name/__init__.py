@@ -1,1 +1,0 @@
-# {% now "DATE_FORMAT" %}
