@@ -19,5 +19,5 @@ DATABASES = {
 SECRET_KEY = ''
 
 if DEBUG:
-    # Show emails in the console during developement.
+    # Show emails in the console during development.
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
